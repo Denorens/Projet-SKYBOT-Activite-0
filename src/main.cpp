@@ -150,6 +150,7 @@ void setup() {
         digitalWrite(ledG, LOW);
         digitalWrite(ledD, LOW);
         Serial2.println("z");
+        Serial.println("Avancer");
         request->send(SPIFFS, "/index.html", String(), false);
     });
     server.on("/bas", HTTP_GET, [](AsyncWebServerRequest *request) {
@@ -158,6 +159,7 @@ void setup() {
         digitalWrite(ledG, LOW);
         digitalWrite(ledD, LOW);
         Serial2.println("s");
+        Serial.println("Reculer");
         request->send(SPIFFS, "/index.html", String(), false);
     });
     server.on("/droite", HTTP_GET, [](AsyncWebServerRequest *request) {
@@ -166,6 +168,7 @@ void setup() {
         digitalWrite(ledB, LOW);
         digitalWrite(ledG, LOW);
         Serial2.println("d");
+        Serial.println("Droite");
         request->send(SPIFFS, "/index.html", String(), false);
     });
     server.on("/gauche", HTTP_GET, [](AsyncWebServerRequest *request) {
@@ -174,6 +177,7 @@ void setup() {
         digitalWrite(ledH, LOW);
         digitalWrite(ledB, LOW);
         Serial2.println("q");
+        Serial.println("Gauche");
         request->send(SPIFFS, "/index.html", String(), false);
     });
     server.on("/vmoins", HTTP_GET, [](AsyncWebServerRequest *request) {
@@ -197,6 +201,7 @@ void setup() {
         digitalWrite(ledD, LOW);
         digitalWrite(ledH, LOW);
         digitalWrite(ledB, LOW);
+        Serial.println("Vitesse moins");
         request->send(SPIFFS, "/index.html", String(), false);
     });
     server.on("/vplus", HTTP_GET, [](AsyncWebServerRequest *request) {
@@ -220,6 +225,7 @@ void setup() {
         digitalWrite(ledD, LOW);
         digitalWrite(ledH, LOW);
         digitalWrite(ledB, LOW);
+        Serial.println("Vitesse plus");
         request->send(SPIFFS, "/index.html", String(), false);
     });
     server.on("/stop", HTTP_GET, [](AsyncWebServerRequest *request) {
