@@ -1,0 +1,44 @@
+html {
+    font-family: Helvetica;
+    margin: 0px auto;
+    text-align: center;
+    display: inline-block;
+}
+
+h1 {
+    color: #0F3376;
+    padding: 2vh;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #f44336;
+}
+
+.button3 {
+    background-color: #008000;
+}
+
+.button4 {
+    background-color: #dc143c;
+}
+
+table {
+    margin: 0 auto;
+}
